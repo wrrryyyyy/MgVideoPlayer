@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:id="@+id/tv_uart_name"
+            android:background="@color/colorBlack"
+            android:textColor="@color/colorWhite"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:layout_margin="2dp"
+                android:layout_weight="3"
+                android:id="@+id/tv_uart_data"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right|bottom"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+
+                android:id="@+id/tv_uart_creat_time"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

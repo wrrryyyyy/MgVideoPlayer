@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/left_menu_grout_default"
+        android:checkableBehavior="none"
+        ></group>
+    <group
+        android:id="@+id/left_menu_grout_update"
+        android:checkableBehavior="all"
+        ></group>
+</menu>

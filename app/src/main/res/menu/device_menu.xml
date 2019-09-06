@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+    <item android:id="@+id/device_search_menu"
+        android:title="@string/connect"
+        apps:showAsAction="always"/>
+</menu>

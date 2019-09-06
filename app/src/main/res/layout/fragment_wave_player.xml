@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wrrryyyy.www.mgvideoplayer.WavePlayerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/colorLightYellow"
+                android:textColor="@color/colorWhite"
+                android:text="@string/stop_fresh"
+                android:id="@+id/btn_wave_player_fresh">
+
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorThemeYellow"
+                android:text="@string/viewport_auto"
+                android:id="@+id/btn_wave_player_go_front">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/colorLightYellow"
+                android:textColor="@color/colorWhite"
+                android:text="清除波形"
+                android:id="@+id/btn_wave_player_clean">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/colorThemeYellow"
+                android:textColor="@color/colorWhite"
+                android:text=":"
+                android:id="@+id/btn_wave_player_items">
+            </Button>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/colorThemeYellow"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/btn_wave_player">
+
+            </Button>
+        </LinearLayout>
+        <lecho.lib.hellocharts.view.LineChartView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/line_chart_wave_player"/>
+    </LinearLayout>
+</FrameLayout>

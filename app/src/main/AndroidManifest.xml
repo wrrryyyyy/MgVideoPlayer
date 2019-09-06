@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wrrryyyy.www.mgvideoplayer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/j_lanucher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/j_lanucher_cirul"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MovicPlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".BluetoothActivity" />
+        <activity android:name=".ConnectActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".PhotoActivity" />
+        <activity android:name=".RemoteActivity" />
+        <activity android:name=".UartActivity" />
+        <activity
+            android:name=".AllActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".VersionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+    </application>
+
+</manifest>

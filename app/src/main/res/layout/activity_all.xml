@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/dl_left_menu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.wrrryyyy.www.mgvideoplayer.NoRollViewPager
+                android:id="@+id/all_viewpager"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btn_all_left_menu"
+                    android:background="@mipmap/j_lanucher_cirul"/>
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/all_tab_layout"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/colorWhite"
+                    app:tabIndicatorColor="@color/colorThemeYellow"
+                    app:tabTextAppearance="@style/TabLayout.TabTest"
+                    >
+                </android.support.design.widget.TabLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_gravity="left"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorDarkWhite"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/left_linear_layout"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_gravity="center"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/ib_head"
+                    android:background="@mipmap/j_lanucher_cirul" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_bluetooth_state"
+                android:text="@string/searching"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                />
+            <ListView
+                android:id="@+id/lv_left_menu"
+                android:layout_width="match_parent"
+                android:background="@color/colorDarkWhite"
+                android:layout_height="0dp"
+                android:layout_weight="99">
+
+            </ListView>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="top|left"
+                android:gravity="center"
+                android:id="@+id/btn_all_left_about"
+                android:text="@string/know_more"/>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+
+</FrameLayout>

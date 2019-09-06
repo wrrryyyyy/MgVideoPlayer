@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">萝卜三号</string>
+    <string name="kirastar"><![CDATA[请手动关掉页面（<ゝω・）☆~]]></string>
+    <string name="connect">连接</string>
+    <string name="about">关于</string>
+    <string name="search">搜索</string>
+    <string name="cancel">取消</string>
+    <string name="disconnect">断开</string>
+    <string name="tangqiang">_(:з」∠)_</string>
+    <string name="send_fail">发送失败</string>
+    <string name="auto">坏苹果发送</string>
+    <string name="change">转换摄像头</string>
+    <string name="start_send">开始发送</string>
+    <string name="restart">重新开始</string>
+    <string name="reaching">接收中</string>
+    <string name="disreaching">已断开</string>
+    <string name="show_all">显示全部</string>
+    <string name="show_part">显示部分</string>
+    <string name="finish_send">发送完成</string>
+    <string name="read_file">读取文件中</string>
+    <string name="send_camera_photo">摄像头图像</string>
+    <string name="remote">遥控</string>
+    <string name="oled">OLED显示</string>
+    <string name="cleanText">清除</string>
+    <string name="uart_show">串口显示</string>
+    <string name="stop_sending">暂停发送</string>
+    <string name="switch_oled_color">切换为彩屏</string>
+    <string name="switch_oled_mono">切换为蓝屏</string>
+    <string name="stop_send_camera_photo">取消发送</string>
+    <string name="uart_send">串口发送</string>
+    <string name="pause">暂停</string>
+    <string name="cleanup">清除</string>
+    <string name="close">关闭</string>
+    <string name="uart_data">串口数据</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lock_viewport">锁定视角</string>
+    <string name="free_viewport">自由视角</string>
+    <string name="stop_fresh">刷新暂停</string>
+    <string name="keep_wave_fresh">刷新中</string>
+    <string name="viewport_auto">自适应视角</string>
+    <string name="confirm">确定</string>
+    <string name="searching">搜索中……</string>
+    <string name="connected">已连接</string>
+    <string name="connecting">尝试连接中……</string>
+    <string name="idle">未进行连接</string>
+    <string name="text_string">宇轩不在的第一天，想他</string>
+    <string name="gyro_mode">陀螺仪模式</string>
+    <string name="button_key_values">按键表</string>
+    <string name="know_more">…</string>
+    <string name="construction">功能尚未实现……</string>
+    <string name="verson_name">版本号：</string>
+    <string name="open_media_resource">请打开媒体资源链接</string>
+    <string name="decode_state">解码状态:未解码</string>
+    <string name="open_file">打开文件</string>
+    <string name="sendd">发送!</string>
+    <string name="image_binary">二值图像</string>
+    <string name="image_color">彩色图像</string>
+    <string name="single_step">单步</string>
+    <string name="gcode_auto_run">自动</string>
+    <string name="back_to_zero">归零</string>
+    <string name="emergency_stop">急停</string>
+    <string name="photo2gcode_text">go!</string>
+    <string-array name = "Gcode">
+        <item>G00</item>
+        <item>G01</item>
+        <item>G02</item>
+        <item>G03</item>
+        <item>G28</item>
+    </string-array>
+</resources>

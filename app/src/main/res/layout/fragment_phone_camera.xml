@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/camera_find_color">
+            <Button
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="@string/switch_oled_color"
+                android:background="@color/colorLightYellow"
+                android:id="@+id/oled_init_btn"/>
+            <Button
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkYellow"
+                android:textColor="@color/colorWhite"
+                android:text="@string/auto"
+                android:id="@+id/auto_btn"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightYellow"
+                android:textColor="@color/colorWhite"
+                android:text="@string/send_camera_photo"
+                android:id="@+id/camera_send_btn"/>
+            <Button
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkYellow"
+                android:textColor="@color/colorWhite"
+                android:text="@string/change"
+                android:id="@+id/change_btn"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_main"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:layout_height="match_parent">>
+            <org.opencv.android.JavaCameraView
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:id="@+id/camera_find_color"
+                android:layout_gravity="center"
+                android:layout_below="@+id/camera_tv"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

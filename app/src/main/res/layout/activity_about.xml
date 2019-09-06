@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wrrryyyy.www.mgvideoplayer.AboutActivity">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_tab_layout"
+            app:tabBackground="@color/colorBlack"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabTextAppearance="@style/TabLayout.TabTest"
+            >
+
+        </android.support.design.widget.TabLayout>
+
+        <com.wrrryyyy.www.mgvideoplayer.NoRollViewPager
+            android:id="@+id/about_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.wrrryyyy.www.mgvideoplayer.NoRollViewPager>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
